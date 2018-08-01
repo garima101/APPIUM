@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26704" started-at="2018-08-01T05:04:29Z" finished-at="2018-08-01T05:04:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26704" started-at="2018-08-01T05:04:29Z" finished-at="2018-08-01T05:04:56Z">
+      <class name="com.automation.testClass.IOSDemoTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="setUp" is-config="true" duration-ms="3507" started-at="2018-08-01T10:34:29Z" finished-at="2018-08-01T10:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@os='ios']]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="WebFailtest()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="WebFailtest" duration-ms="9370" started-at="2018-08-01T10:34:33Z" finished-at="2018-08-01T10:34:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebFailtest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="tearDown" is-config="true" duration-ms="2187" started-at="2018-08-01T10:34:42Z" finished-at="2018-08-01T10:34:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="setUp" is-config="true" duration-ms="1226" started-at="2018-08-01T10:34:44Z" finished-at="2018-08-01T10:34:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@os='ios']]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="WebPasstest()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="WebPasstest" duration-ms="7231" started-at="2018-08-01T10:34:46Z" finished-at="2018-08-01T10:34:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebPasstest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="tearDown" is-config="true" duration-ms="3106" started-at="2018-08-01T10:34:53Z" finished-at="2018-08-01T10:34:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="teardown1()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="teardown1" is-config="true" duration-ms="153" started-at="2018-08-01T10:34:56Z" finished-at="2018-08-01T10:34:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown1 -->
+      </class> <!-- com.automation.testClass.IOSDemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

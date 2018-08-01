@@ -1,0 +1,7 @@
+2018-07-31 15:49:17 INFO  IOSDemoTest:36 - the IOS Web 2 test is pass
+2018-07-31 15:49:33 WARN  IOSDemoTest:25 - About to launch IOS safari
+2018-07-31 15:49:44 INFO  IOSDemoTest:28 - the IOS Web test is pass
+2018-07-31 15:49:50 WARN  AndroidDemoTest:56 - about to launch Android wesite
+2018-07-31 15:49:55 INFO  AndroidDemoTest:58 - Android website is launched
+2018-07-31 15:49:58 INFO  AndroidDemoTest:61 - Android Web test is passed
+2018-07-31 15:50:09 INFO  AndroidDemoTest:67 - Android Web 2 test is passed
