@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test name="TestIOS">
+  	<parameter name="deviceQuery" value="@os='ios'"/>
+    <classes>
+      <class name="com.automation.testClass.IOSDemoTest"/>
+    </classes>
+  </test> 
+<listeners>
+ <listener class-name="com.automation.utilites.Listener"></listener>
+  <listener class-name="com.automation.utilites.TestNGCustomReportListener"></listener>
+  <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+ </listeners>
+<!--  <test name="Regression Test Suite_PR_JY_001" > -->
+<!--  <classes>  -->
+<!--     <class name="com.automation.testClass.Self_care" />  -->
+<!--   </classes>  -->
+<!--    </test> -->
+<!--  <test name="Regression Test Suite__PR_JY_002"   > -->
+<!--    <classes> -->
+<!--    <class name="com.automation.login.logindemo"></class> -->
+<!--    <class name="com.automation.signup.SignupDemo" /> -->
+<!--    </classes> -->
+<!--  </test> -->
+<!--   <test name="Regression Test Suite__PR_JY_003" > -->
+<!--   <classes> -->
+<!--   <class name="com.automation.signup.SignupDemo" /> -->
+<!--   </classes> -->
+<!--  </test> -->
+  <test name="TestAndroid">
+  	<parameter name="deviceQuery" value="@os='android'"/>
+    <classes>
+      <class name="com.automation.testClass.AndroidDemoTest"/>
+   </classes>
+ </test>  
+<!--   <test name="Regression test Suite_PR_JY_004" > -->
+<!--   <classes> -->
+<!--   <class name="com.automation.testClass.Test1"/> -->
+<!--   </classes> -->
+<!--   </test> -->
+ 
+</suite> <!-- Suite -->
