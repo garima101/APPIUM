@@ -24,7 +24,7 @@ import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 
 import org.testng.ITestNGMethod;
-
+import org.testng.annotations.AfterSuite;
 import org.testng.xml.XmlSuite;
 
 public class TestNGCustomReportListener implements IReporter{
@@ -95,8 +95,29 @@ public class TestNGCustomReportListener implements IReporter{
         }
 
         }
-  }
-
-   
+        
+        try {
+			Thread.sleep(500);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+       
+  
+			String OutputDir = System.getProperty("user.dir") + "\\test-output";
+			String dirc = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
+			File Dirc = new File(OutputDir + "//" + dirc);
+			Dirc.mkdir();
+			File source = new File(OutputDir + "\\html");
+			File Destination = new File(OutputDir + "\\" + dirc);
+			try {
+				FileUtils.copyDirectory(source, Destination);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			}
 
 }
+

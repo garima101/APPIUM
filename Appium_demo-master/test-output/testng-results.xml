@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26704" started-at="2018-08-01T05:04:29Z" finished-at="2018-08-01T05:04:56Z">
+  <suite name="Default suite" duration-ms="164" started-at="2018-08-02T04:54:23Z" finished-at="2018-08-02T04:54:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26704" started-at="2018-08-01T05:04:29Z" finished-at="2018-08-01T05:04:56Z">
-      <class name="com.automation.testClass.IOSDemoTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="setUp" is-config="true" duration-ms="3507" started-at="2018-08-01T10:34:29Z" finished-at="2018-08-01T10:34:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[@os='ios']]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="164" started-at="2018-08-02T04:54:23Z" finished-at="2018-08-02T04:54:23Z">
+      <class name="com.automation.testClass.Test1">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.automation.testClass.Test1@7085bdee]" name="test1" duration-ms="31" started-at="2018-08-02T10:24:23Z" finished-at="2018-08-02T10:24:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="WebFailtest()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="WebFailtest" duration-ms="9370" started-at="2018-08-01T10:34:33Z" finished-at="2018-08-01T10:34:42Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.automation.testClass.Test1@7085bdee]" name="test2" duration-ms="0" started-at="2018-08-02T10:24:23Z" finished-at="2018-08-02T10:24:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WebFailtest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="tearDown" is-config="true" duration-ms="2187" started-at="2018-08-01T10:34:42Z" finished-at="2018-08-01T10:34:44Z">
+        </test-method> <!-- test2 -->
+        <test-method status="FAIL" signature="test3()[pri:0, instance:com.automation.testClass.Test1@7085bdee]" name="test3" duration-ms="48" started-at="2018-08-02T10:24:23Z" finished-at="2018-08-02T10:24:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at com.automation.testClass.Test1.test3(Test1.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="setUp" is-config="true" duration-ms="1226" started-at="2018-08-01T10:34:44Z" finished-at="2018-08-01T10:34:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[@os='ios']]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="WebPasstest()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="WebPasstest" duration-ms="7231" started-at="2018-08-01T10:34:46Z" finished-at="2018-08-01T10:34:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebPasstest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="tearDown" is-config="true" duration-ms="3106" started-at="2018-08-01T10:34:53Z" finished-at="2018-08-01T10:34:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="teardown1()[pri:0, instance:com.automation.testClass.IOSDemoTest@72d818d1]" name="teardown1" is-config="true" duration-ms="153" started-at="2018-08-01T10:34:56Z" finished-at="2018-08-01T10:34:56Z">
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="teardown1()[pri:0, instance:com.automation.testClass.Test1@7085bdee]" name="teardown1" is-config="true" duration-ms="97" started-at="2018-08-02T10:24:23Z" finished-at="2018-08-02T10:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown1 -->
-      </class> <!-- com.automation.testClass.IOSDemoTest -->
+      </class> <!-- com.automation.testClass.Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
