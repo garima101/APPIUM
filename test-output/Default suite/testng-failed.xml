@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.automation.testClass.AndroidDemoTest">
+      <class name="com.automation.testClass.Test1">
         <methods>
-          <include name="WebPasstest"/>
-          <include name="setUp"/>
+          <include name="test3"/>
+          <include name="teardown1"/>
         </methods>
-      </class> <!-- com.automation.testClass.AndroidDemoTest -->
+      </class> <!-- com.automation.testClass.Test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

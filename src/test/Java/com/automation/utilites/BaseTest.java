@@ -1,10 +1,15 @@
 package com.automation.utilites;
 
+
+import static java.nio.file.StandardCopyOption.*;
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Files;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -73,29 +78,34 @@ public class BaseTest {
  public void tearDown() {
 		// Generates a report of the test case.
 		// For more information - https://docs.experitest.com/display/public/SA/Report+Of+Executed+Test
-		client.generateReport(false);
+		//client.generateReport(false);
 //		// Releases the client so that other clients can approach the agent in the near future.
 		client.releaseClient();
 		System.out.println("---------------client is released---------------------------");
 	}
 	
-	@AfterSuite
+/*	@AfterSuite
 public void teardown1() {
 	Result();	   
 	}		
 	public void Result() {
-			String OutputDir = System.getProperty("user.dir") + "\\test-output";
-			String dirc = new SimpleDateFormat("yyyyMMddHHmm'.html'").format(new Date());
-			File Dirc = new File(OutputDir + "//" + dirc);
-			Dirc.mkdir();
-			File source = new File(OutputDir + "\\index.html");
-			String fileName = new SimpleDateFormat("yyyyMMddHHmm'.html'").format(new Date());
-			File Destination = new File(OutputDir + "\\" + dirc + "\\" + fileName);
-			try {
-				FileUtils.copyFile(source, Destination);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-}
+		String OutputDir = System.getProperty("user.dir") + "\\test-output";
+		String dirc = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
+		File Dirc = new File(OutputDir + "//" + dirc);
+		Dirc.mkdir();
+		File source = new File(OutputDir + "\\html");
+		File Destination = new File(OutputDir + "\\" + dirc);
+		try {
+			FileUtils.copyDirectory(source, Destination);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		}*/
+public void testCapture123() throws Exception{
+	String str0 = client.capture("Capture");
+    client.sleep(5000);
+    client.getRemoteFile(str0, 30000, "H:\\Screenshot\\");
+    }	
 }

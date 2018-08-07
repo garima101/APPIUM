@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.automation.utilites.Listener"/>
-    <listener class-name="com.automation.utilites.TestNGCustomReportListener"/>
-  </listeners>
-  <test name="testtry(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.automation.testClass.AndroidDemoTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.automation.testClass.AndroidDemoTest -->
       <class name="com.automation.testClass.Test1">
         <methods>
-          <include name="test2"/>
           <include name="test3"/>
-          <include name="tearDown"/>
+          <include name="teardown1"/>
         </methods>
       </class> <!-- com.automation.testClass.Test1 -->
     </classes>
-  </test> <!-- testtry(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
